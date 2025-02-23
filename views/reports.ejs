@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            padding-bottom: 5px;
+        }
+        .nav-links a.active {
+            border-bottom: 2px solid black;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .chart-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .chart-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .chart-subtitle {
+            color: gray;
+            font-size: 14px;
+        }
+        .chart-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">ExpenseTracker</a>
+        <div class="nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/reports" class="active">Reports</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h2>Reports</h2>
+        </div>
+        <div class="chart-card">
+            <h3 class="chart-title">Year-over-Year Comparison</h3>
+            <p class="chart-subtitle">Monthly spending patterns across different years</p>
+            <div class="chart-container">
+                <!-- Chart.js or other library integration here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
